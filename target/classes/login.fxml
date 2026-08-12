@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+    fx:controller="FirstFx.controller.LoginController" alignment="CENTER" spacing="18"
+    stylesheets="@style.css" styleClass="tela-principal">
+    <padding>
+        <Insets top="40" right="50" bottom="40" left="50" />
+    </padding>
+    <VBox alignment="CENTER" spacing="15" styleClass="caixa-login">
+        <Label text="Sistema de Usuários" styleClass="titulo" />
+        <Label text="Acesse com suas credenciais" styleClass="subtitulo" />
+        <TextField fx:id="campoLogin" promptText="Login" prefWidth="320"
+            styleClass="campo" onAction="#entrar" />
+        <PasswordField fx:id="campoSenha" promptText="Senha" prefWidth="320"
+            styleClass="campo" onAction="#entrar" />
+        <Label fx:id="mensagem" wrapText="true" maxWidth="320" />
+        <Button text="Entrar" prefWidth="320" styleClass="botao-primario"
+            onAction="#entrar" />
+        <Separator />
+        <Label text="Primeiro acesso: admin / admin123" styleClass="rodape" />
+    </VBox>
+</VBox>

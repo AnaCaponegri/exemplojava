@@ -1,0 +1,205 @@
+tela-principal {
+    -fx-background-color: #eef2f7;
+    -fx-font-family: "Arial";
+}
+
+.caixa-login {
+    -fx-background-color: white;
+    -fx-background-radius: 12px;
+    -fx-padding: 35px;
+    -fx-effect: dropshadow(gaussian,
+            rgba(0, 0, 0, 0.15),
+            15,
+            0,
+            0,
+            5);
+}
+
+.titulo {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+.subtitulo {
+    -fx-font-size: 14px;
+    -fx-text-fill: #6b7280;
+}
+
+.campo {
+    -fx-background-color: #f9fafb;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 12px;
+    -fx-font-size: 14px;
+}
+
+.campo:focused {
+    -fx-border-color: #2563eb;
+    -fx-background-color: white;
+}
+
+.botao-entrar {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-padding: 12px;
+    -fx-cursor: hand;
+}
+
+.botao-entrar:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+.botao-secundario {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2563eb;
+    -fx-border-color: #2563eb;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 10px;
+    -fx-cursor: hand;
+}
+
+.botao-secundario:hover {
+    -fx-background-color: #eff6ff;
+}
+
+.rodape {
+    -fx-font-size: 11px;
+    -fx-text-fill: #9ca3af;
+}
+
+.root {
+    -fx-font-family: "Arial";
+}
+
+.tela-principal,
+.fundo-app {
+    -fx-background-color: #eef2f7;
+}
+
+.caixa-login,
+.cartao {
+    -fx-background-color: white;
+    -fx-background-radius: 12px;
+    -fx-padding: 32px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.14), 15, 0, 0, 5);
+}
+
+.titulo {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+.subtitulo {
+    -fx-font-size: 14px;
+    -fx-text-fill: #6b7280;
+}
+
+.titulo-secao {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+.rotulo {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #374151;
+}
+
+.campo {
+    -fx-background-color: #f9fafb;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 11px;
+    -fx-font-size: 14px;
+}
+
+.campo:focused {
+    -fx-border-color: #2563eb;
+    -fx-background-color: white;
+}
+
+.botao-primario {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-padding: 11px 16px;
+    -fx-cursor: hand;
+}
+
+.botao-primario:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+.botao-secundario {
+    -fx-background-color: white;
+    -fx-text-fill: #2563eb;
+    -fx-border-color:
+        #2563eb;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 10px 15px;
+    -fxcursor: hand;
+}
+
+.botao-perigo {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+    -fx-background-radius:
+        6px;
+    -fx-padding: 9px 16px;
+    -fx-cursor: hand;
+}
+
+.barra-topo {
+    -fx-background-color: #1f2937;
+}
+
+.titulo-claro {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.texto-claro {
+    -fx-text-fill: #d1d5db;
+}
+
+.botao-topo {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color:
+        #9ca3af;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.mensagem-erro {
+    -fx-text-fill: #b91c1c;
+    -fx-font-weight: bold;
+}
+
+.mensagem-sucesso {
+    -fx-text-fill: #15803d;
+    -fx-font-weight: bold;
+}
+
+.rodape {
+    -fx-font-size: 11px;
+    -fx-text-fill: #6b7280;
+}
+
+.table-view {
+    -fx-background-radius: 8px;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8px;
+}

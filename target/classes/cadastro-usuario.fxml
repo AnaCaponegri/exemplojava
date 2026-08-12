@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+    fx:controller="FirstFx.controller.CadastroUsuarioController"
+    stylesheets="@style.css" styleClass="fundo-app">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="12" styleClass="barra-topo">
+            <padding>
+                <Insets top="18" right="24" bottom="18" left="24" />
+            </padding>
+            <Button text="← Voltar" styleClass="botao-topo" onAction="#voltar" />
+            <Label text="Cadastro de usuário" styleClass="titulo-claro" />
+        </HBox>
+    </top>
+    <center>
+        <VBox alignment="TOP_CENTER">
+            <padding>
+                <Insets top="25" right="35" bottom="25" left="35" />
+            </padding>
+            <VBox spacing="12" maxWidth="500" styleClass="cartao">
+                <Label text="Dados do usuário" styleClass="titulo-secao" />
+                <Label text="Nome completo *" styleClass="rotulo" />
+                <TextField fx:id="campoNome" promptText="Ex.: Gustavo Garcia"
+                    styleClass="campo" />
+                <Label text="Login *" styleClass="rotulo" />
+                <TextField fx:id="campoLogin" promptText="Ex.: gustavo" styleClass="campo" />
+                <Label text="E-mail *" styleClass="rotulo" />
+                <TextField fx:id="campoEmail" promptText="nome@email.com"
+                    styleClass="campo" />
+                <HBox spacing="12">
+                    <VBox spacing="6" HBox.hgrow="ALWAYS">
+                        <Label text="Senha *" styleClass="rotulo" />
+                        <PasswordField fx:id="campoSenha" promptText="Mínimo de 6 caracteres"
+                            styleClass="campo" />
+                    </VBox>
+                    <VBox spacing="6" HBox.hgrow="ALWAYS">
+                        <Label text="Confirmar senha *" styleClass="rotulo" />
+                        <PasswordField fx:id="campoConfirmarSenha" promptText="Repita a senha"
+                            styleClass="campo" />
+                    </VBox>
+                </HBox>
+                <HBox spacing="16" alignment="CENTER_LEFT">
+                    <VBox spacing="6" HBox.hgrow="ALWAYS">
+                        <Label text="Perfil" styleClass="rotulo" />
+                        <ComboBox fx:id="comboPerfil" maxWidth="Infinity" />
+                    </VBox>
+                    <CheckBox fx:id="checkAtivo" text="Usuário ativo" selected="true" />
+                </HBox>
+                <Label fx:id="mensagem" wrapText="true" />
+                <Button text="Salvar usuário" maxWidth="Infinity" styleClass="botao-primario"
+                    onAction="#salvar" />
+            </VBox>
+        </VBox>
+    </center>
+</BorderPane>
