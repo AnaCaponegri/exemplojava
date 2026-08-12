@@ -1,38 +1,66 @@
-Sistema de Usuários — JavaFX
+# Sistema de Usuários — JavaFX
 
-Projeto de estudo desenvolvido em Java com JavaFX, contendo telas de login e cadastro de usuários, integrado a um banco de dados MySQL.
+Projeto de estudos feito em **Java** com **JavaFX**, com telas de login e cadastro de usuários, conectado a um banco de dados **MySQL**.
 
-📌 Funcionalidades
-Tela de login (valida usuário e senha no banco de dados)
-Tela de cadastro de novo usuário
-Acesso à tela principal após login realizado com sucesso
-🛠️ Tecnologias
-Java 21
-JavaFX 21
-Maven
-MySQL + MySQL Connector/J (driver JDBC)
-▶️ Como executar
+---
 
-1. Criar o banco de dados no MySQL:
+## 📌 O que o projeto faz
 
-sql
+- Tela de **login** (confere usuário e senha no banco)
+
+- Tela de **cadastro** de novo usuário
+
+- Depois do login, abre a **tela principal**
+
+---
+
+## 🛠️ Tecnologias usadas
+
+- Java 21
+
+- JavaFX 21
+
+- Maven
+
+- MySQL + MySQL Connector/J
+
+---
+
+## ▶️ Como rodar
+
+**1. Criar o banco no MySQL:**
+
+```sql
 CREATE DATABASE sistema_usuarios;
+```
 
-2. Configurar a conexão
+**2. Configurar a conexão**
 
-Edite o arquivo Conexao.java com usuário, senha e porta do seu MySQL (padrão: 3306).
+No arquivo `Conexao.java`, ajustar usuário, senha e porta do MySQL (padrão: `3306`).
 
-3. Rodar o projeto
+**3. Rodar o projeto**
 
-bash
+```bash
 mvn clean javafx:run
-🔑 Login de teste
+```
+
+---
+
+## 🔑 Login de teste
+
+```
 Usuário: admin
 Senha:   admin123
-📂 Estrutura do projeto
-Pasta	Responsabilidade
-controller	Controla as telas (login, cadastro, principal)
-dao	Busca e salva dados no banco
-model	Classe Usuario
-util	Conexão com banco, hash de senha, controle de sessão
-resources	Arquivos .fxml (telas) e .css (estilo)
+```
+
+---
+
+## 📂 Organização das pastas
+
+| Pasta | O que tem |
+|---|---|
+| `controller` | Controla as telas |
+| `dao` | Busca e salva dados no banco |
+| `model` | Classe `Usuario` |
+| `util` | Conexão, senha e sessão |
+| `resources` | Telas `.fxml` e estilo `.css` |
